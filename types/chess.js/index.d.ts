@@ -332,6 +332,11 @@ export interface ChessInstance {
      * verbose objects.
      */
     moves(options?: {
+        /** 
+         * Set to true to return return pseudo-legal moves (this includes moves that allow the king
+         * to be captured) 
+        */
+        legal?: boolean | undefined;
         /** Set to true to return verbose move objects instead of strings */
         verbose?: boolean | undefined;
         /**
